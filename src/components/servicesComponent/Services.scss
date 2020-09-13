@@ -1,0 +1,17 @@
+.servicesSection {
+  height: 100vh;
+  display: flex;
+  .servicesText {
+    flex: 50%;
+    position: relative;
+    .servicesInnerText {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%, -50%);
+    }
+  }
+  .servicesAnimation {
+    flex: 50%;
+  }
+}
