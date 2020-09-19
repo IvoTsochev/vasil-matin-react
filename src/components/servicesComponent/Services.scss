@@ -1,17 +1,81 @@
 .servicesSection {
   height: 100vh;
   display: flex;
-  .servicesText {
-    flex: 50%;
-    position: relative;
-    .servicesInnerText {
+  background-color: #000;
+  .service1 {
+    flex: 25%;
+    background-color: red;
+    clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%); 
+    position: relative;   
+    transition: all .3s ease-in-out;   
+    h2 {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translateY(-50%, -50%);
+      transform: translate(-50%, -50%);
+      color: #fff;
+    }
+    &:hover {
+      flex: 50%;
+      clip-path: polygon(0px 0, 100% 0, 82% 100%, 0% 100%);
     }
   }
-  .servicesAnimation {
-    flex: 50%;
+  .service2 {
+    flex: 25%;
+    background-color: green;
+    clip-path: polygon(170px 0, 100% 0, 70% 100%, 0% 100%);
+    margin-left: -11.2rem;
+    position: relative;
+    transition: all .3s ease-in-out;   
+    h2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+    }
+    &:hover {
+      flex: 50%;
+      clip-path: polygon(170px 0, 100% 0, 82% 100%, 0% 100%);
+    }
+  }
+  .service3 {
+    flex: 25%;
+    background-color: orange;
+    clip-path: polygon(170px 0, 100% 0, 70% 100%, 0% 100%);
+    margin-left: -11.2rem;
+    position: relative;   
+    transition: all .3s ease-in-out;
+    h2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+    }
+    &:hover {
+      flex: 50%;
+      clip-path: polygon(170px 0, 100% 0, 82% 100%, 0% 100%);
+    }
+  }
+  .service4 {
+    flex: 25%;
+    background-color: blue;
+    background-size: cover;
+    clip-path: polygon(170px 0, 100% 0, 100% 100%, 0% 100%);
+    margin-left: -11.2rem;
+    position: relative;
+    transition: all .3s ease-in-out;
+    h2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+    }
+    &:hover {
+      flex: 50%;
+      clip-path: polygon(170px 0, 100% 0, 100% 100%, 0% 100%);
+    }
   }
 }
