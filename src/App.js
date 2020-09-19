@@ -14,7 +14,7 @@ import Contact from "./components/contactComponent/Contact";
 function App() {
   let options = {
     sectionClassName: "section",
-    anchors: ["sectionOne", "sectionTwo", "sectionThree"],
+    anchors: ["sectionOne", "sectionTwo", "sectionThree", "sectionFour"],
     scrollBar: false,
     navigation: true,
     verticalAlign: false,
