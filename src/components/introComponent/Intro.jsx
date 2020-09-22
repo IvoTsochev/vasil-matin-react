@@ -1,12 +1,16 @@
 import React from "react";
+import gsap from "gsap";
 import "./Intro.scss";
 import vasko from "../../img/vasko.png";
 
 const Intro = () => {
+  const tlIntro = gsap.timeline({ defaults: { ease: "power1.out" } });
+  tlIntro.fromTo(".introImg", { x: "-100" }, { x: "0", duration: 1.5, y: "0" });
+
   return (
     <div className="introSection">
       <div className="introImg">
-        <img src={vasko} alt="Vasil Matin picture" />
+        <img className="vasilMatinImg" src={vasko} alt="Vasil Matin picture" />
       </div>
       <div className="introText">
         <p>
